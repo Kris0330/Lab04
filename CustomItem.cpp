@@ -25,7 +25,7 @@ std::string CustomItem::composeItem() {
         oss << pair.first << ": " << pair.second << " oz\n";
     }
 
-    oss << "Price: $" << std::fixed << std::setprecision(2) << getPrice() << "\n"; // ✅ 修正換行
+    oss << "Price: $" << std::fixed << std::setprecision(2) << getPrice() << "\n"; 
     return oss.str();
 }
 

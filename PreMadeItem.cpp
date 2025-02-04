@@ -16,7 +16,7 @@ std::string PreMadeItem::composeItem() {
     std::ostringstream oss;
     oss << "Pre-made Size: " << size << "\n";
     oss << "Pre-made Item: " << name << "\n";
-    oss << "Price: $" << std::fixed << std::setprecision(2) << getPrice() << "\n"; // ✅ 修正換行
+    oss << "Price: $" << std::fixed << std::setprecision(2) << getPrice() << "\n"; 
     return oss.str();
 }
 

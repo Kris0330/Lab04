@@ -13,8 +13,8 @@ public:
     virtual ~CustomItem();
 
     void addTopping(std::string topping);
-    virtual std::string composeItem() override;  // ✅ 移除 const，匹配基類
-    virtual double getPrice() override;         // ✅ 移除 const，匹配基類
+    virtual std::string composeItem() override;  
+    virtual double getPrice() override;         
 
 private:
     std::map<std::string, int> toppings;
